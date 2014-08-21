@@ -40,6 +40,7 @@ gem 'rails_12factor'
 group :test, :development do
   gem 'rspec'
   gem 'rspec-rails', '~> 2.0'
-  gem  'factory_girl_rails'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false, :group => :test
 end
 ruby "2.0.0"
