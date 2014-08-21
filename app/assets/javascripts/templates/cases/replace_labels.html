@@ -1,0 +1,13 @@
+<h2 class="sub-header">Labels</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody>
+        <tr ng-repeat="label in labelsToSelect">
+            <td><input type="checkbox" ng-model="label.selected"></td>
+            <td>{{label.name}}</td>
+            <td>{{label.description}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <td><button class="btn-success" ng-click="addLabel()"> Submit</button></td>
+</div>

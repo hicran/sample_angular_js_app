@@ -1,0 +1,13 @@
+<h2 class="sub-header">Cases</h2>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <tbody ng-repeat="case in cases">
+        <tr>
+            <td>{{case.name}}
+                <span class="label label-info labeling" ng-repeat="label in case.labels">{{label.name}}</span>
+                <span class="labeling"><button class="btn-success btn-xs" ng-click="addLabel(case.id, case.labels)">+</button></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

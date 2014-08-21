@@ -1,0 +1,19 @@
+<form name="labelForm">
+    <div class="form-group">
+        <label>
+            <span>Label name:</span>
+            <input type="text" ng-model="newLabel.name" required autofocus/>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <span>Description:</span>
+            <input type="text" ng-model="newLabel.description" required autofocus/>
+        </label>
+    </div>
+    <div class="form-group">
+        <div class="formFooter">
+            <button class="btn-success" ng-click="createLabel()"> Submit</button>
+        </div>
+    </div>
+</form>

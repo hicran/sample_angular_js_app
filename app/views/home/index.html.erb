@@ -1,0 +1,20 @@
+<div class="container-fluid" ng-app="sample_app">
+  <div class="row">
+    <div class="sidebar" ng-controller="SideBarController">
+      <ul class="nav nav-sidebar">
+        <li><a href="" ng-click="fetchLabels()">Labels</a></li>
+        <li><a href="" ng-click="main()">Case Filters</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="row">
+        <div>
+          <div class="view-container">
+            <div ng-view class="view-frame animate-view"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
