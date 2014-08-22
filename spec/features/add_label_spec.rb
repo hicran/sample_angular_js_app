@@ -9,6 +9,5 @@ feature 'adding a label' do
     fill_in 'Description', :with => 'Label1 Description'
     click_button("Submit")
     expect(page).to have_content('label1')
-    hang
   end
 end
