@@ -41,6 +41,11 @@ group :test, :development do
   gem 'rspec'
   gem 'rspec-rails', '~> 2.0'
   gem 'factory_girl_rails'
-  gem 'simplecov', :require => false, :group => :test
+  gem 'simplecov', :require => false
+  gem 'selenium-webdriver', require: false
+  gem 'poltergeist', require: false
+  gem 'capybara'
+  gem 'steak'
+  gem 'database_cleaner'
 end
 ruby "2.0.0"
